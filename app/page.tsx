@@ -234,15 +234,16 @@ export default function FuneralProgram() {
         <CardContent className="p-6">
           <div className="flex items-center mb-4">
             <User className="h-6 w-6 text-amber-600 mr-3" />
-            <h2 className="text-xl font-bold text-blue-900">About</h2>
+            <h2 className="text-xl font-bold text-blue-900">Summary</h2>
           </div>
 
           <div className="space-y-4">
-            {biographyContent.paragraphs.slice(0, 3).map((paragraph, index) => (
-              <p key={index} className="text-blue-900 text-sm leading-relaxed">
+            {biographyContent.paragraphs.slice(0, 4).map((paragraph, index, arr) => (
+              <div className="text-blue-900">
+              {index === arr.length-1 || index === 0 ? <p className="italic text-sm">{paragraph}</p> : <p key={index} className=" leading-relaxed">
                 {paragraph}
-              </p>
-            ))}
+              </p>}
+            </div>))}
           </div>
 
           <div className="mt-6 pt-4 border-t border-amber-200">
@@ -250,7 +251,7 @@ export default function FuneralProgram() {
               onClick={() => setIsBiographyFullscreenOpen(true)}
               className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white shadow-lg"
             >
-              Read Complete Biography
+              Read the stories
             </Button>
 
             <Button
@@ -301,7 +302,7 @@ export default function FuneralProgram() {
         <CardContent className="p-6">
           <div className="flex items-center mb-4">
             <Camera className="h-6 w-6 text-blue-600 mr-3" />
-            <h2 className="text-xl font-bold text-blue-900">Cherished Memories</h2>
+            <h2 className="text-xl font-bold text-blue-900">Memories</h2>
           </div>
 
           <div className="grid grid-cols-2 gap-3 mb-4">
@@ -381,9 +382,14 @@ export default function FuneralProgram() {
           <div className="space-y-4">
             {biblePassages.map((passage, index) => (
               <div key={index} className="p-4 bg-white rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-blue-800 mb-3">{passage.title}</h3>
+                {/* <h3 className="font-semibold text-blue-800 mb-3">{passage.title}</h3> */}
+                <div className="flex items-center space-x-2 mb-3">
+                  <h3 className="font-semibold text-blue-800">{passage.title}</h3>
+                  <Badge variant="secondary" className="text-xs bg-amber-100 text-amber-700">
+                    {passage.reference}
+                  </Badge>
+                </div>
                 <blockquote className="text-blue-700 text-sm leading-relaxed mb-3">{passage.passage}</blockquote>
-                <cite className="text-amber-600 font-medium text-sm">- {passage.reference}</cite>
               </div>
             ))}
           </div>
@@ -398,9 +404,8 @@ export default function FuneralProgram() {
         <CardContent className="p-6">
           <div className="flex items-center mb-4">
             <MessageCircle className="h-6 w-6 text-amber-600 mr-3" />
-            <h2 className="text-xl font-bold text-blue-900">Loving Tributes</h2>
+            <h2 className="text-xl font-bold text-blue-900">Tributes</h2>
           </div>
-
           <div className="space-y-4">
             {tributes.map((tribute, index) => (
               <div
@@ -562,7 +567,7 @@ export default function FuneralProgram() {
 
             <div className="p-6 md:p-8">
               <div className="max-w-3xl mx-auto">
-                <div className="text-center mb-8">
+                <div className="text-center mb-4">
                   <div className="flex items-center justify-center mb-4">
                     <Heart className="h-8 w-8 text-amber-600" />
                   </div>
@@ -571,10 +576,10 @@ export default function FuneralProgram() {
                 </div>
 
                 <div className="prose prose-lg prose-slate max-w-none">
-                  {biographyContent.paragraphs.map((paragraph, index) => (
+                  {biographyContent.paragraphs.slice(4, -1).map((paragraph, index) => (
                     <p
                       key={index}
-                      className="text-lg leading-relaxed mb-6 text-blue-800"
+                      className="text-lg leading-relaxed mb-2 text-blue-800"
                     >
                       {paragraph}
                     </p>

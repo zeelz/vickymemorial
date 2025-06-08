@@ -18,7 +18,7 @@ export interface BiblePassage {
 export interface Tribute {
   name: string
   relationship: string
-  message: string[]
+  message: string | string[]
   image?: string
 }
 
@@ -97,15 +97,6 @@ export const memorialData: MemorialData = {
     "vic1.jpg",
   ],
 
-  // galleryImages: [
-  //   "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop",
-  //   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
-  //   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=400&fit=crop",
-  //   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=400&fit=crop",
-  //   "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=600&h=400&fit=crop",
-  //   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=400&fit=crop",
-  // ],
-
   programSchedule: [
     {activity: "Opening Prayer", speaker: "Chiedu Okonta", duration: "3 mins" },
     {activity: "Worship", speaker: "Pekkie Martynz ", duration: "10 mins"},
@@ -147,21 +138,21 @@ export const memorialData: MemorialData = {
   biblePassages: [
     {
       title: "1st Bible Reading",
-      reference: "Rom. 8:18-25 (NIV)",
+      reference: "Rom. 8:18-25 (NLT)",
       passage:
-        "¹⁸ I consider that our present sufferings are not worth comparing with the glory that will be revealed in us. ¹⁹ For the creation waits in eager expectation for the children of God to be revealed. ²⁰ For the creation was subjected to frustration, not by its own choice, but by the will of the one who subjected it, in hope ²¹ that[a] the creation itself will be liberated from its bondage to decay and brought into the freedom and glory of the children of God. ²² We know that the whole creation has been groaning as in the pains of childbirth right up to the present time. ²³ Not only so, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as we wait eagerly for our adoption to sonship, the redemption of our bodies. ²⁴ For in this hope we were saved. But hope that is seen is no hope at all. Who hopes for what they already have? ²⁵ But if we hope for what we do not yet have, we wait for it patiently.",
+        "¹⁸ Yet what we suffer now is nothing compared to the glory he will reveal to us later. ¹⁹ For all creation is waiting eagerly for that future day when God will reveal who his children really are. ²⁰ Against its will, all creation was subjected to God’s curse. But with eager hope, ²¹ the creation looks forward to the day when it will join God’s children in glorious freedom from death and decay. ²²For we know that all creation has been groaning as in the pains of childbirth right up to the present time. ²³ And we believers also groan, even though we have the Holy Spirit within us as a foretaste of future glory, for we long for our bodies to be released from sin and suffering. We, too, wait with eager hope for the day when God will give us our full rights as his adopted children,[a] including the new bodies he has promised us. ²⁴ We were given this hope when we were saved. (If we already have something, we don’t need to hope[b] for it. ²⁵ But if we look forward to something we don’t yet have, we must wait patiently and confidently.)"
     },
     {
       title: "2nd Bible Reading",
-      reference: "1 Thess. 4:13-18 (NIV)",
+      reference: "1 Thess. 4:13-18 (NLT)",
       passage:
-        "¹³ Brothers and sisters, we do not want you to be uninformed about those who sleep in death, so that you do not grieve like the rest of mankind, who have no hope. ¹⁴ For we believe that Jesus died and rose again, and so we believe that God will bring with Jesus those who have fallen asleep in him. ¹⁵ According to the Lord’s word, we tell you that we who are still alive, who are left until the coming of the Lord, will certainly not precede those who have fallen asleep. ¹⁶ For the Lord himself will come down from heaven, with a loud command, with the voice of the archangel and with the trumpet call of God, and the dead in Christ will rise first. ¹⁷ After that, we who are still alive and are left will be caught up together with them in the clouds to meet the Lord in the air. And so we will be with the Lord forever. ¹⁸ Therefore encourage one another with these words.",
+        "¹³ And now, dear brothers and sisters, we want you to know what will happen to the believers who have died[a] so you will not grieve like people who have no hope. ¹⁴ For since we believe that Jesus died and was raised to life again, we also believe that when Jesus returns, God will bring back with him the believers who have died. ¹⁵ We tell you this directly from the Lord: We who are still living when the Lord returns will not meet him ahead of those who have died.[b] ¹⁶ For the Lord himself will come down from heaven with a commanding shout, with the voice of the archangel, and with the trumpet call of God. First, the believers who have died[c] will rise from their graves. ¹⁷ Then, together with them, we who are still alive and remain on the earth will be caught up in the clouds to meet the Lord in the air. Then we will be with the Lord forever. ¹⁸ So encourage each other with these words.",
     },
     {
       title: "3rd Bible Reading",
-      reference: "Rom. 8:28-39 (NIV)",
+      reference: "Rom. 8:28-39 (NLT)",
       passage:
-        "²⁸ And we know that in all things God works for the good of those who love him, who[a] have been called according to his purpose. ²⁹ For those God foreknew he also predestined to be conformed to the image of his Son, that he might be the firstborn among many brothers and sisters. ³⁰ And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified. ³¹ What, then, shall we say in response to these things? If God is for us, who can be against us? ³² He who did not spare his own Son, but gave him up for us all—how will he not also, along with him, graciously give us all things? ³³Who will bring any charge against those whom God has chosen? It is God who justifies. ³⁴ Who then is the one who condemns? No one. Christ Jesus who died—more than that, who was raised to life—is at the right hand of God and is also interceding for us. ³⁵ Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword? ³⁶ As it is written: “For your sake we face death all day long; we are considered as sheep to be slaughtered.” ³⁷ No, in all these things we are more than conquerors through him who loved us. ³⁸ For I am convinced that neither death nor life, neither angels nor demons,[c] neither the present nor the future, nor any powers, ³⁹ neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.",
+        "²⁸ And we know that God causes everything to work together[a] for the good of those who love God and are called according to his purpose for them. ²⁹ For God knew his people in advance, and he chose them to become like his Son, so that his Son would be the firstborn[b] among many brothers and sisters. ³⁰ And having chosen them, he called them to come to him. And having called them, he gave them right standing with himself. And having given them right standing, he gave them his glory. ³¹ What shall we say about such wonderful things as these? If God is for us, who can ever be against us? ³² Since he did not spare even his own Son but gave him up for us all, won’t he also give us everything else? ³³Who dares accuse us whom God has chosen for his own? No one—for God himself has given us right standing with himself. ³⁴ Who then will condemn us? No one—for Christ Jesus died for us and was raised to life for us, and he is sitting in the place of honor at God’s right hand, pleading for us. ³⁵ Can anything ever separate us from Christ’s love? Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or hungry, or destitute, or in danger, or threatened with death? ³⁶ (As the Scriptures say, “For your sake we are killed every day; we are being slaughtered like sheep.”[c]) ³⁷ No, despite all these things, overwhelming victory is ours through Christ, who loved us. ³⁸ And I am convinced that nothing can ever separate us from God’s love. Neither death nor life, neither angels nor demons,[d] neither our fears for today nor our worries about tomorrow—not even the powers of hell can separate us from God’s love. ³⁹ No power in the sky above or in the earth below—indeed, nothing in all creation will ever be able to separate us from the love of God that is revealed in Christ Jesus our Lord.",
     },
   ],
 
@@ -169,9 +160,9 @@ export const memorialData: MemorialData = {
     {
       name: "Ifeoma",
       relationship: "Daughter",
-      message: [""],
-        // "When you’re a kid, you don\’t really know your mother as a person of her own. You only know her as your mum. She cares for you, teaches, and guides you. My experience was not different from that. My mum was so strict when I was growing up. Looking back now, I think I knew she loved me, loved all of us, but it didn’t always seem that way then. What with the flogging and lambasting when you flaunted the rules. When I got older, I started to understand who she was, as a person. She re-introduced herself to us, sort of… My mum was so kind, she had a huge heart. She was funny, and a joy to be with. I just know that if she was not my mum, and  we were mates, she and I would have been friends. Ngo loved her husband and it showed. She was committed to him and our family. She sacrificed so much for us. It’s difficult not to love and respect someone who had to go through a lot of sacrifices for you.\nI loved my mum, passionately. As I grew older I respected the person I found her to be. The woman who loved and respected her husband no matter what. The mother who protected and sacrificed for her family despite the odds. Ngo was a strong woman. I remember telling my friends a while ago that I want to raise my kids exactly as my mum and dad raised me. They may not have had a lot of funds to be classified as rich, but the values they imbued in us, in me, would stay with me forever. I love you to the moon and back mum. You know I would have given anything to take the pain you suffered this past year. I really believed He was going to heal you. I know you wanted so much to get better, be there for us, and enjoy time with us as a family. But God had other plans for you. I can’t say I know what those plans are, but I know who our God is, and though it hurts so much, knowing that His plans are to bring us to a worthy end gives me peace and comfort.\nThank you for being the woman you were - the Proverbs 31 woman. We, her children arise and call her blessed; her husband also praises her: Many women do noble things, but she surpasses them all. Charm is deceptive, and beauty is fleeting; but this woman who feared the LORD is to be praised. We honor her for all that her hands have done, her works bring her praise from every area.",
-      image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=400&fit=crop",
+      message: ["When you’re a kid, you don\’t really know your mother as a person of her own.",
+         "You only know her as your mum.", "She cares for you, teaches, and guides you.", "My experience was not different from that.", "My mum was so strict when I was growing up.", "Looking back now, I think I knew she loved me, loved all of us, but it didn’t always seem that way then.", "What with the flogging and lambasting when you flaunted the rules.", "When I got older, I started to understand who she was, as a person.", "She re-introduced herself to us, sort of… My mum was so kind, she had a huge heart.", "She was funny, and a joy to be with.", "I just know that if she was not my mum, and  we were mates, she and I would have been friends.", "Ngo loved her husband and it showed.", "She was committed to him and our family.", "She sacrificed so much for us.", "It’s difficult not to love and respect someone who had to go through a lot of sacrifices for you.", "I loved my mum, passionately.", "As I grew older I respected the person I found her to be.", "The woman who loved and respected her husband no matter what.", "The mother who protected and sacrificed for her family despite the odds.", "Ngo was a strong woman.", "I remember telling my friends a while ago that I want to raise my kids exactly as my mum and dad raised me.", "They may not have had a lot of funds to be classified as rich, but the values they imbued in us, in me, would stay with me forever.", "I love you to the moon and back mum.", "You know I would have given anything to take the pain you suffered this past year.", "I really believed He was going to heal you.", "I know you wanted so much to get better, be there for us, and enjoy time with us as a family.", "But God had other plans for you.", "I can’t say I know what those plans are, but I know who our God is, and though it hurts so much, knowing that His plans are to bring us to a worthy end gives me peace and comfort.", "nThank you for being the woman you were - the Proverbs 31 woman.", "We, her children arise and call her blessed; her husband also praises her: Many women do noble things, but she surpasses them all.", "Charm is deceptive, and beauty is fleeting; but this woman who feared the LORD is to be praised.", "We honor her for all that her hands have done, her works bring her praise from every area."],
+      image: "ifeoma.jpg",
     },
     {
       name: "Fumnanya",
@@ -243,9 +234,9 @@ export const memorialData: MemorialData = {
       image: "nanya.jpg",
     },
     {
-      name: "",
+      name: "Abiodun Adebayo Salako",
       message: [
-        "ARODSSON Lagos (Abiodun Adebayo Salako - State Chairman)",
+        "ARODSSON Lagos (State Chairman)",
         "We the Executive Committee (EXCO) and entire members of the Association of Retired Officers of Department of State Services of Nigeria (ARODSSON) Lagos State Chapter, commiserate with you on the home-call of our colleague and member, Late Mrs. Victoria Okonta.",
         "The deceased worked with the Department of State Services at the National Headquarters, Awolowo Road, Lagos State, back then in the Operations, Administration Departments etc. She was a diligent and professional officer, always dedicated to her duties. She was a kind hearted woman, caring and loving. Madam Victoria was a goal-getter and team player whilst in the Service.",
         "Importantly, she was a member of the past EXCOs of ARODSSON, Lagos Chapter. She obviously left a befitting legacy to her children.",
@@ -302,6 +293,19 @@ export const memorialData: MemorialData = {
       image: ""
     },
     {
+      name: "Austin, Nkechi, and Patience Kenudi Nwoko",
+      message: [
+        "A Tribute to my dear sister ", 
+        "Today , we come together to celebrate the life of our beloved sister , Mrs Victoria Ngozi Okonta . Though she may have been taken from us too soon, her spirit will forever live on in the memories we cherish and the love we shared.",
+        "Growing up with our sister was an adventure filled with laughter , mischief and unconditional love that can never be erased or replaced in our lives!", "From her sisters - \nPatient Uche, & Mariam \nKenudi Nwoko ."
+      ],
+
+
+      relationship: "Sisters",
+      image: ""
+      
+    },
+    {
       name: "Mama Uche & Family",
       message: [
         "Mama Uche & Family",
@@ -340,7 +344,12 @@ export const memorialData: MemorialData = {
 
 // Biography content as a separate export for easier editing
 export const biographyContent = {
-  paragraphs: [
+  paragraphs: ["\"When suffering knocks at your door and you say there is no seat for him, he tells you not to worry because he has brought his own stool.\" ~ Chinua Achebe",
+    
+    "\"Ngo Baby\", as she was fondly called by her husband, a name that captured both her warmth and her spirited nature, was fearless and full of heart. She didn’t do anything halfway. Whether it was in love, friendship, work, or family, she showed up fully. You always knew where she stood, and if she believed in you, she made sure you never forgot it.",
+"This isn’t a biography, how could it be? A life like hers can’t be summed up in a few pages. But to help you understand who she was and what she stood for, we’ve put together a few real-life stories from the perspective of her three children. Through them, we hope you’ll see not just our mother’s strength, but also the values she held dear, the love she gave so freely, and the principles she lived by.",
+"Tap the button below to read the memories that could inspire you to embrace and carry forward the very best of who she was.",
+
     "Victoria Ngozi Okonta was born on March 31, 1962 to Mr. and Mrs. Kenudi Nwoko. She went to be with the lord on May 2, 2025 after a protracted illness.",
 
     "Ngo baby, as she was fondly called by her husband (a name that captured both her warmth and her spirited nature) was a fearless woman. She did nothing halfway. When she showed up, whether in love, friendship, work, or family, she gave her all. You always knew where she stood, and if she believed in you, she made sure you never forgot it. She is survived by a grandchild, three children, three sisters, one brother, her in-laws and other extended family.",
