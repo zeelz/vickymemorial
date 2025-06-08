@@ -248,6 +248,15 @@ export const memorialData: MemorialData = {
       image: ""
     },
     {
+      name: "Folashade",
+      message: [
+        "Dear Sister Okonta, your presence in my life at the early stage of my career was a blessing. You welcomed me to TREM Benin like your blood sister and you treated me as such till I was transferred out of Benin. The relationship continued when you moved to Lagos,  I'm so grateful for the memories we shared. Your  strength, resilience and courage in the face of adversity inspired me. Your words are always soothing to my spirit whenever I call. Your generosity, warmth and hospitality to all of us in TREM Benin can not be overemphasized. You made everyone  welcome as your house door was always open to the young and old.",
+        "I'll carry your legacy in my heart. Though you're no longer with us, your love and impact will never fade as your life was a gift to all of us and your generation. The impact of your advice to me can not be forgotten. Rest in peace, dear sister Okonta. You will be deeply missed, but your memory will live on in our hearts. Rest in peace and may your soul be at peace in Jesus name amen."
+      ],
+      relationship: "Friend",
+      image: ""      
+    },
+    {
       name: "Deaconess Okosun",
       message: [
         "",
@@ -255,7 +264,7 @@ export const memorialData: MemorialData = {
         "Adieu Sister Vic!",
         "Adieu the Strong woman!"
       ],
-      relationship: "Deaconess",
+      relationship: "Friend",
       image: ""
     },
     {
@@ -265,7 +274,7 @@ export const memorialData: MemorialData = {
         "Tribute to a Beautiful Heart and a Loving Friend: Mrs Vicky Ngozi Okonta.", "Aah! I find it difficult to do this. Vicky, you were a beautiful soul, you loved to a fault, you were a cheerful giver, you loved God sincerely and it showed in your relationship with anyone that came your way. You loved your husband so dearly and your children were your heartbeat. You cherished them so much and made all the sacrifices for their well-being and education. You were the definition of a virtuous woman. Now that you are to eat the fruit of your labour, death snatched you away from us. I know you are in a better place resting. Goodnight my friend!",
         "Mrs. Joyce Ihezue (friend of the family)"
       ],
-      relationship: "Friend of the family",
+      relationship: "Friend",
       image: ""
     },    
     {
@@ -289,19 +298,20 @@ export const memorialData: MemorialData = {
         "May God grant you eternal rest in his blossom and the family the fortitude to bear the loss in Jesus name",
         "Pastor Chiedu Okonta"
       ],
-      relationship: "Family",
+      relationship: "Brother-in-law",
       image: ""
     },
     {
-      name: "Austin, Nkechi, and Patience Kenudi Nwoko",
+      name: "Austin, Uche, Nkechi, and Patience Kenudi Nwoko",
       message: [
         "A Tribute to my dear sister ", 
         "Today , we come together to celebrate the life of our beloved sister , Mrs Victoria Ngozi Okonta . Though she may have been taken from us too soon, her spirit will forever live on in the memories we cherish and the love we shared.",
-        "Growing up with our sister was an adventure filled with laughter , mischief and unconditional love that can never be erased or replaced in our lives!", "From her sisters - \nPatient Uche, & Mariam \nKenudi Nwoko ."
+        "Growing up with our sister was an adventure filled with laughter , mischief and unconditional love that can never be erased or replaced in our lives!", "From her siblings - Patience, Austin, Uche, & Nkechi Kenudi Nwoko"
+
       ],
 
 
-      relationship: "Sisters",
+      relationship: "Siblings",
       image: ""
       
     },
