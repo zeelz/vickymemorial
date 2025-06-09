@@ -689,9 +689,9 @@ export default function FuneralProgram() {
                     <h3 className="text-2xl font-semibold text-blue-800">{tributes[selectedTributeIndex].name}</h3>
                     <p className="text-amber-600">{tributes[selectedTributeIndex].relationship}</p>
                   </div>
-                  <p className="text-lg text-blue-700 font-bold pb-1">{tributes[selectedTributeIndex].message[0]}</p>
+                  <p className="text-lg text-blue-700 font-bold m-0 p-0">{tributes[selectedTributeIndex].message[0]}</p>
                   
-                  {tributes[selectedTributeIndex].message.slice(1, tributes[selectedTributeIndex].message.length).map((paragraph, index) => <p key={index} className="text-lg text-blue-700 leading-[1.2]">
+                  {tributes[selectedTributeIndex].message.slice(1, tributes[selectedTributeIndex].message.length).map((paragraph, index) => <p key={index} className="text-lg text-blue-700 mt-0">
                     {paragraph}
                   </p>)}
                   
