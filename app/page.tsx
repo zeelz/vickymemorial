@@ -313,7 +313,7 @@ export default function FuneralProgram() {
                 onClick={() => openGalleryLightbox(index)}
               >
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={`gallery/${image}`}
                   alt={`Memory ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -633,7 +633,7 @@ export default function FuneralProgram() {
 
             <div className="relative w-full h-full">
               <Image
-                src={galleryImages[currentImageIndex] || "/placeholder.svg"}
+                src={`gallery/${galleryImages[currentImageIndex]}`}
                 alt={`Memory ${currentImageIndex + 1}`}
                 fill
                 className="object-contain"
