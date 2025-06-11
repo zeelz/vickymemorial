@@ -2,6 +2,7 @@ export interface ProgramItem {
   activity: string
   speaker?: string
   duration?: string
+  tab?: string
 }
 
 export interface Hymn {
@@ -152,21 +153,29 @@ export const memorialData: MemorialData = {
     "okontas-9.jpg",
   ],
 
+// tabs:
+  // home
+  // program
+  // biography
+  // gallery
+  // scripture
+  // tributes
+
   programSchedule: [
     {activity: "Opening Prayer", speaker: "Chiedu Okonta", duration: "3 mins" },
     {activity: "Worship", speaker: "Pekkie Martynz ", duration: "10 mins"},
-    {activity: "Welcome Address", speaker: "Tochukwu Okon", duration: "3 mins"},
-    {activity: "1st Bible Reading", speaker: "Mariam Kenudi (Rom. 8:18-25)", duration: "3 mins"},
-    {activity: "Opening Hymn: Blessed Assurance",duration: "3 mins"},
+    {activity: "Welcome Address", speaker: "Tochukwu Okonta", duration: "3 mins"},
+    {activity: "1st Bible Reading", speaker: "Mariam Kenudi (Rom. 8:18-25)", duration: "3 mins", tab: "scripture"},
+    {activity: "Opening Hymn: Blessed Assurance",duration: "3 mins", tab: "scripture"},
     {activity: "The Word", speaker: "Pastor Solomon Pedro ", duration: "15 mins"},
-    {activity: "Hymn 2: Be Still my Soul",duration: "3 mins"},
+    {activity: "Hymn 2: Be Still my Soul",duration: "3 mins", tab: "scripture"},
     {activity: "1st Tribute", speaker: "ARRODSON Representative", duration: "2 mins"},
-    {activity: "2nd Bible Reading", speaker: "Uncle Emma Biose (1 Thess. 4:13-18)"},
-    {activity: "Hymn 3: Nearer my God to Thee",duration: "3 mins"},
+    {activity: "2nd Bible Reading", speaker: "Uncle Emma Biose (1 Thess. 4:13-18)", tab: "scripture"},
+    {activity: "Hymn 3: Nearer my God to Thee",duration: "3 mins", tab: "scripture"},
     {activity: "2nd Tribute", speaker: "Joyce Ihezue", duration: " 3 mins"},
-    {activity: "3rd Bible Reading", speaker: "Onyinye Okonta (Rom. 8:28-39)", duration: "3 mins"},
+    {activity: "3rd Bible Reading", speaker: "Onyinye Okonta (Rom. 8:28-39)", duration: "3 mins", tab: "scripture"},
     {activity: "3rd tribute", speaker: "Folashade", duration: " 3 mins"},
-    {activity: "Special Song: How He Loves Us/Reckless Love (Medley)", duration: "5 mins"},
+    {activity: "Special Song", duration: "5 mins"},
     {activity: "Tribute by the Children/Vote of Thanks", duration: " 5 mins"},
     {activity: "Closing Hymn: Praise The Lord/ Tochukwu (in Igbo)",duration: "3 mins"},
 
@@ -187,7 +196,46 @@ export const memorialData: MemorialData = {
         "3.\nPerfect submission, all is at rest.\nI in my Savior am happy and bless’d,\nWatching and waiting, looking above,\nFilled with His goodness, lost in his love.\n\n[Refrain]"
       ],
     },
-    
+    {
+      title: "Hymn 2: Be Still my Soul",
+      verses: [      
+        "Be still, my soul; the Lord is on thy side;\nbear patiently the cross of grief or pain.\nLeave to thy God to order and provide;\nIn every change He faithful will remain.\nBe still, my soul; thy best, thy heav'nly Friend\nthrough thorny ways leads to a joyful end.",
+
+        "Be still, my soul; thy God doth undertake\nto guide the future as He has the past.\nThy hope, thy confidence let nothing shake;\nall now mysterious shall be bright at last.\nBe still, my soul; the waves and winds still know\nHis voice who ruled them while He dwelt below.\n",
+        
+        "Be still, my soul; when dearest friends depart,\nand all is darkened in the veil of tears,\nthen shalt thou better know His love, His heart,\nwho comes to soothe thy sorrow and thy fears.\nBe still, my soul; thy Jesus can repay\nfrom His own fullness all He takes away.\n",
+        
+        "Be still, my soul; the hour is hast'ning on\nwhen we shall be forever with the Lord,\nwhen disappointment, grief, and fear are gone,\nsorrow forgot, love's purest joys restored.\nBe still, my soul; when change and tears are past,\nall safe and blessed we shall meet at last."
+      ]
+    },
+    {
+      title: "Hymn 3: Nearer my God to Thee",
+      verses: [
+        "Nearer, my God, to thee, nearer to thee!\nE'en though it be a cross that raiseth me,\nstill all my song shall be,\nnearer, my God, to thee;\nnearer, my God, to thee, nearer to thee!",
+
+        "Though like the wanderer, the sun gone down,\ndarkness be over me, my rest a stone;\nyet in my dreams I'd be\nnearer, my God, to thee;\nnearer, my God, to thee, nearer to thee!",
+
+        "There let the way appear, steps unto heaven;\nall that thou sendest me, in mercy given;\nangels to beckon me\nnearer, my God, to thee;\nnearer, my God, to thee, nearer to thee!",
+
+        "Or if, on joyful wing cleaving the sky,\nsun, moon, and stars forgot, upward I fly,\nstill all my song shall be,\nnearer, my God, to thee;\nnearer, my God, to thee, nearer to thee!"
+      ]
+    },
+    {
+      title: "Hymn 4: To Chukwu (Praise the Lord)",
+      verses: [
+        "Otutọ diri Chukwu n'ih'Ọ luru!\nỌ hur'uwa n'anya, nye Ọkpara-Ya,\nNke togboro ndu-Ya ikpuchi nmehie,\nMehepu uzọ ndu k'ora we bata.",
+
+        "Kọrọs (REFRAIN)",
+
+        "To Chukwu! To Chukwu! K'uwa nur'olu-Ya!\nTo Chukwu! To Chukwu! Ka madu dum nuria\nBiko, biakute Nna site na Jisos;\nNye Ya otuto n'ok'ihe Ọ luru!",
+
+        "Ezi ngbaputa nk'eji obara go!\nOnye kwere ka nkwa Chineke diri,\nOnye kachasi njọ nke kwere n'ezie,\nJisos gagbaghara nmehie-ya ugbua.",
+
+        "Kọrọs (REFRAIN)",
+
+        "Ok'ihe Ọ zir'ayi, ok'ih'Ọ luru,\nOk'onu k'ayi nwere site na Jisos;\nM'ayi ganaṅuri onu nke kachasi,\nNeti nkpu n'ebube mgbe ayi gahu Ya."
+      ]
+    }
   ],
 
   biblePassages: [
@@ -218,7 +266,7 @@ export const memorialData: MemorialData = {
       message: [
         "",
         "When you’re a kid, you don\’t really know your mother as a person of her own.",
-         "You only know her as your mum.", "She cares for you, teaches, and guides you.", "My experience was not different from that.", "My mum was so strict when I was growing up.", "Looking back now, I think I knew she loved me, loved all of us, but it didn’t always seem that way then.", "What with the flogging and lambasting when you flaunted the rules.", "When I got older, I started to understand who she was, as a person.", "She re-introduced herself to us, sort of… My mum was so kind, she had a huge heart.", "She was funny, and a joy to be with.", "I just know that if she was not my mum, and  we were mates, she and I would have been friends.", "Ngo loved her husband and it showed.", "She was committed to him and our family.", "She sacrificed so much for us.", "It’s difficult not to love and respect someone who had to go through a lot of sacrifices for you.", "I loved my mum, passionately.", "As I grew older I respected the person I found her to be.", "The woman who loved and respected her husband no matter what.", "The mother who protected and sacrificed for her family despite the odds.", "Ngo was a strong woman.", "I remember telling my friends a while ago that I want to raise my kids exactly as my mum and dad raised me.", "They may not have had a lot of funds to be classified as rich, but the values they imbued in us, in me, would stay with me forever.", "I love you to the moon and back mum.", "You know I would have given anything to take the pain you suffered this past year.", "I really believed He was going to heal you.", "I know you wanted so much to get better, be there for us, and enjoy time with us as a family.", "But God had other plans for you.", "I can’t say I know what those plans are, but I know who our God is, and though it hurts so much, knowing that His plans are to bring us to a worthy end gives me peace and comfort.", "nThank you for being the woman you were - the Proverbs 31 woman.", "We, her children arise and call her blessed; her husband also praises her: Many women do noble things, but she surpasses them all.", "Charm is deceptive, and beauty is fleeting; but this woman who feared the LORD is to be praised.", "We honor her for all that her hands have done, her works bring her praise from every area."],
+         "You only know her as your mum.", "She cares for you, teaches, and guides you.", "My experience was not different from that.", "My mum was so strict when I was growing up.", "Looking back now, I think I knew she loved me, loved all of us, but it didn’t always seem that way then.", "What with the flogging and lambasting when you flaunted the rules.", "When I got older, I started to understand who she was, as a person.", "She re-introduced herself to us, sort of… My mum was so kind, she had a huge heart.", "She was funny, and a joy to be with.", "I just know that if she was not my mum, and  we were mates, she and I would have been friends.", "Ngo loved her husband and it showed.", "She was committed to him and our family.", "She sacrificed so much for us.", "It’s difficult not to love and respect someone who had to go through a lot of sacrifices for you.", "I loved my mum, passionately.", "As I grew older I respected the person I found her to be.", "The woman who loved and respected her husband no matter what.", "The mother who protected and sacrificed for her family despite the odds.", "Ngo was a strong woman.", "I remember telling my friends a while ago that I want to raise my kids exactly as my mum and dad raised me.", "They may not have had a lot of funds to be classified as rich, but the values they imbued in us, in me, would stay with me forever.", "I love you to the moon and back mum.", "You know I would have given anything to take the pain you suffered this past year.", "I really believed He was going to heal you.", "I know you wanted so much to get better, be there for us, and enjoy time with us as a family.", "But God had other plans for you.", "I can’t say I know what those plans are, but I know who our God is, and though it hurts so much, knowing that His plans are to bring us to a worthy end gives me peace and comfort.", "Thank you for being the woman you were - the Proverbs 31 woman.", "We, her children arise and call her blessed; her husband also praises her: Many women do noble things, but she surpasses them all.", "Charm is deceptive, and beauty is fleeting; but this woman who feared the LORD is to be praised.", "We honor her for all that her hands have done, her works bring her praise from every area."],
       image: "ifeoma.jpg",
     },
     {
@@ -398,7 +446,7 @@ export const memorialData: MemorialData = {
       phone: "08103793295",
     },
     {
-      name: "Tochi",
+      name: "Tochukwu",
       phone: "09111631749",
     }
   ],
@@ -441,6 +489,34 @@ export const biographyContent = {
 
     "A few weeks before she passed, I remember telling her how overwhelmed I was with life and all the things I had to carry. She hadn’t been able to speak for over nine months by then. I sat beside her and told her I understood now. The weight she must have felt. How lonely it must have been sometimes. And how, somehow, she still showed up for everyone.",
 
-    "That’s who she was. That’s who I hope to be."
+    "That’s who she was. That’s who I hope to be.",
+
+    "Tochukwu the Great:",
+
+    "There were so many great things about growing up with my mum and dad. For a good portion of my pre-teen years, we saw more of my mum than my dad. This was because he periodically went off-shore for work. My dad did his fair share of instilling discipline in us growing up, but for my mum, it was more of a priority task. I guess it’s pretty understandable that I got beat the most out of my siblings because I'm the only male in the midst of two lovely females. What would be more surprising would be that I got beat mostly by my mum than my dad. My mum didn’t really care that I was the only boy. Maybe it’s because she knew it did not mean squat to my dad, I don’t know.",
+
+    "Growing up I was a bit of a terror. I got into all sorts of issues. When I was about 5 years old, I went through a window while playing at a neighbour’s apartment and got a deep cut on my feet. I learnt pretty early that my mum’s worry for you fuels her wrath. Later on I would take stuff without asking, loose things she bought for me due to excessive playing, concoct mischievous pranks on my sisters and, at appropriate times, she could go ballistic or just bring out her cane and flog the living daylights out of me.",
+
+    "When I was really bad, she would threaten to rub pepper over my body and/or eyes and my dad would staunchly refuse that. He thought that was too excessive a punishment for a child. My mother, as much as she may have wanted to, never used pepper as a punishment for me. My mum was a strong personality, very hardworking and sufficient. Yet she completely yielded under my father’s authority. When I look at how my mother lived I’m awed and humbled by her. I can only pray that my children get to have a mother like I had.",
+
+   " Fumnaya Special:",
+
+    "My mother was many things: loving, kind, disciplined, God-fearing. If I were to talk about her, I don't think there would be enough pages to express all of who she was. So, I'm gonna tell you about one key moment - amongst many - that changed my life forever. My mother was a disciplinarian. She punished me right.",
+
+    "I remember this one time, I was fresh out of Junior secondary school. I had just finished my junior WAEC and was on holiday. From the time I was in JSS 2, I had been pleading with my mum to go back on a decision she had made when I was in primary 5 that I would not do my hair until after senior secondary school. She made this decision because I always used to run away from making my hair back then and I strong-armed her and my Dad to cut my hair so I wouldn't have to go through the stress of making it. After begging and pleading for 2 years, my mum reluctantly agreed that upon resumption into senior secondary school, I could make hair. I was ecstatic. I began grooming my hair waiting for my “big salon day” before senior school would begin.",
+
+    "One faithful day during the holidays, my mum asked me to cook white rice for lunch. I was reluctant to cook it but I didn't want to jeopardize my chances of getting my hair done for senior school, so I didn't complain. I went to the kitchen, put some water in a pot, poured the rice in and set it on the gas cooker to parboil. I left the kitchen and went into my room to continue whatever it was I was doing. Before long, I heard my name from the living room, “Fumnanya!” It was my mum. “Don't let that rice burn o,” she warned. \“It won't burn\”, I replied. I heard my mother's voice again; \“You should stay in the kitchen with that rice. Don't let that rice burn o. I won't be happy with you if it does.” I responded somewhat impatient; “ ooooh… I said it will not burn na… don't worry… my eye is there.\”",
+
+    "My eyes were not there. The rice burnt so bad, there was hardly anything edible left. My mum was so upset. She asked; “what am I going to do to you now? Which punishment would I give you that would help you understand how I feel?” The next thing I heard was; \“That hair, you're not making it again!\”",
+
+    "I was so sad. I felt like she had destroyed my senior school experience and I hadn't even resumed. As sad as I was though and at my young teenage age, I understood why I had been punished and I remember wishing I had listened to my mum and sat with the rice in the kitchen until it was ready.",
+
+    "I learned a life changing lesson that day: \“your mistakes have consequences.\” That lesson gave birth to these life points:",
+
+    "- Try not to make so many mistakes in life. Some mistakes have dire consequences that follow you forever.",
+    "- When you make mistakes, learn from them. Always make the best of the consequences of your mistakes.",
+    "- Cling to God, the only One who is able to wipe away all your mistakes and give you a clean slate.",
+    "My mother taught me this because she punished me right.",
+    "I trust that these memories give you a bit of a glance into the woman she was and the life she lived. It is our hope and prayer, just as we know it would be hers, that these memories inspire you to embrace and carry forward the very best of who she was. May her light continue to shine through the lives she touched."
   ],
 }

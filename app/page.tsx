@@ -132,21 +132,21 @@ export default function FuneralProgram() {
               {/* Quick Actions */}
               <div className="grid grid-cols-2 gap-4">
                 <Button
-                  onClick={() => setActiveTab("program")}
+                  onClick={() => setActiveTab("biography")}
                   className="h-16 bg-blue-600/80 hover:bg-blue-600 backdrop-blur-sm text-white shadow-lg border border-white/20"
                 >
                   <div className="text-center">
-                    <Calendar className="h-6 w-6 mx-auto mb-1" />
-                    <span className="text-sm font-medium">Program</span>
+                    <User className="h-6 w-6 mx-auto mb-1" />
+                    <span className="text-sm font-medium">About</span>
                   </div>
                 </Button>
                 <Button
-                  onClick={() => setActiveTab("gallery")}
+                  onClick={() => setActiveTab("tributes")}
                   className="h-16 bg-amber-600/80 hover:bg-amber-600 backdrop-blur-sm text-white shadow-lg border border-white/20"
                 >
                   <div className="text-center">
-                    <Camera className="h-6 w-6 mx-auto mb-1" />
-                    <span className="text-sm font-medium">Gallery</span>
+                    <MessageCircle className="h-6 w-6 mx-auto mb-1" />
+                    <span className="text-sm font-medium">Tributes</span>
                   </div>
                 </Button>
               </div>
@@ -180,26 +180,31 @@ export default function FuneralProgram() {
 
           <div className="space-y-4">
             {programSchedule.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm border border-blue-100"
+              <button title={item.activity} 
+                onClick={() => item.tab ? setActiveTab(item.tab) : ""} 
+                className="block w-full "
               >
-                <div className="flex items-center space-x-2 min-w-0 flex-shrink-0">
-                  <Clock className="h-4 w-4 text-amber-600" />
-                  <span className="font-semibold text-blue-800 text-sm">{item.time}</span>
+                <div
+                  key={index}
+                  className="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm border border-blue-100"
+                >
+                  <div className="flex items-center space-x-2 min-w-0 flex-shrink-0 mt-1">
+                    <Clock className="h-4 w-4 text-amber-600" />
+                    {/* <span className="font-semibold text-blue-800 text-sm">{item.duration}</span> */}
+                  </div>
+                  <div className="flex flex-1 flex-col items-start">
+                    <p className="text-blue-900 font-medium text-sm">{item.activity}</p>
+                    {item.speaker && <p className="text-amber-600 text-xs mt-1">Led by {item.speaker}</p>}
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <p className="text-blue-900 font-medium text-sm">{item.activity}</p>
-                  {item.speaker && <p className="text-amber-600 text-xs mt-1">Led by {item.speaker}</p>}
-                </div>
-              </div>
+              </button>
             ))}
           </div>
         </CardContent>
       </Card>
 
       {/* Hymns Preview */}
-      <Card className="bg-gradient-to-br from-amber-50 to-white shadow-lg border border-amber-200">
+      {/* <Card className="bg-gradient-to-br from-amber-50 to-white shadow-lg border border-amber-200">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center">
@@ -224,7 +229,7 @@ export default function FuneralProgram() {
             ))}
           </div>
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   )
 
@@ -331,17 +336,17 @@ export default function FuneralProgram() {
     <div className="space-y-6">
       <div className="flex gap-2">
         <Link
-          href={"#"}
+          href={"#bible-reading"}
           className="w-full rounded-lg py-2 text-center border border-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-blue-600 shadow-md"
         >
-          Hymns
+          Scriptures
         </Link>        
-        <Link
+        {/* <Link
           href={"#bible-reading"}
           className="w-full rounded-lg py-2 text-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-md"
         >
           Scriptures
-        </Link>
+        </Link> */}
       </div>
       {/* Hymns */}
       <Card className="bg-gradient-to-br from-amber-50 to-white shadow-lg border border-amber-200">
@@ -528,11 +533,11 @@ export default function FuneralProgram() {
         <div className="grid grid-cols-6 h-16">
           {[
             { id: "home", icon: Home, label: "Home" },
-            { id: "program", icon: Calendar, label: "Program" },
             { id: "biography", icon: User, label: "About" },
-            { id: "gallery", icon: Camera, label: "Photos" },
-            { id: "scripture", icon: BookOpen, label: "Readings" },
             { id: "tributes", icon: MessageCircle, label: "Tributes" },
+            { id: "gallery", icon: Camera, label: "Gallery" },
+            { id: "scripture", icon: BookOpen, label: "Readings" },
+            { id: "program", icon: Calendar, label: "Program" },
           ].map((tab) => (
             <button
               key={tab.id}
