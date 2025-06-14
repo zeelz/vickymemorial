@@ -408,7 +408,7 @@ export const memorialData: MemorialData = {
       image: ""
     },
     {
-      name: "Mrs. Chekus Okonta (Co-wife)",
+      name: "Chekus Okonta (Co-wife)",
       message: [        
         "Tribute to My Senior Co-wife, Late Mrs. Ngozi Okonta",
         "I wish tears would allow me to fully express all I saw in you during the few years we shared as wives in the same family.",
