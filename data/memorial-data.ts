@@ -269,7 +269,7 @@ export const memorialData: MemorialData = {
         "I also cannot forget how she once saved me from police embarrassment when my master wrongfully had me arrested for something I knew nothing about. She stepped in without hesitation, firm, fearless, and compassionate.",
         "She often told me she knew exactly what she was stepping into when she chose to marry my brother, especially as he was the first son. She accepted the responsibility with grace, strength, and unwavering dedication.",
         "Today, I wish they both lived longer than they did, but God knows best.",
-        "Adeo  our wife, Good night Sis. Ngosi Okonta",
+        "Adieu, our dear wife. Good night, Sister Ngozi Okonta."
       ],
       relationship: "Brother-in-Law",
       image: ""      
