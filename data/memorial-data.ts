@@ -408,6 +408,24 @@ export const memorialData: MemorialData = {
       image: ""
     },
     {
+      name: "Mrs. Chekus Okonta (Co-wife)",
+      message: [        
+        "Tribute to My Senior Co-wife, Late Mrs. Ngozi Okonta",
+        "I wish tears would allow me to fully express all I saw in you during the few years we shared as wives in the same family.",
+        "I never believed you would leave us so soon, but God knows best.",
+        "Aunty, you were a true role model to us. I remember how you brought us, your co-wives, together for weekly prayers, lifting up our husbands and families in faith. You will be deeply missed.",
+        "You encouraged me to stay steadfast and to trust God through the journey of marriage. You were there for me during my traditional marriage, my wedding, and even my father’s burial. Though you weren’t in Lagos at the time, your presence was deeply felt.",
+        "Aunty, you taught me how to forgive and to let go.",
+        "Death has done its worst, but we believe that God has prepared a better place for you. That is our comfort and our hope.",
+        "",
+        "Adieu, Mama Ify,",
+        "Adieu, nwunye dị m,",
+        "Until we meet to part no more."
+      ],
+      relationship: "Co-wife",
+      image: ""      
+    },
+    {
       name: "Chiedu Okonta",
       message: [
         "TRIBUTE TO VICTORIA NGOZI OKONTA",
