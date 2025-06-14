@@ -153,8 +153,8 @@ export default function FuneralProgram() {
               {/* Contact & Donation Info */}
 
               <div className="__bg-white/10 backdrop-blur-sm rounded-xl mt-4 __border border-amber-300/30">
-                <p className="text-amber-200 text-center mb-1">For Donations & Support</p>
-                <p className="text-white/80 text-center text-sm">
+                <p className="text-amber-200 text-center text-xs italic mb-1">For Donations & Support</p>
+                <p className="text-white/80 text-center text-xs italic">
                   <span className="text-white/80 font-bold text-center tracking-wider">{bankDetails.account}</span>
                   {" "} {bankDetails.fundName}  (<span className="text-amber-200">{bankDetails.bankName}</span>)
                 </p>

@@ -263,13 +263,13 @@ export const memorialData: MemorialData = {
     {
       name: "Solomon Okonta",
       message: [
-        "From  Engr. Solomon Okonta:",    
-        "There is so many things to talk about our wife. late Mrs. Victoria Ngosi Okonta but this platform will not be enough to express it.",
-        "I can vividly remember the first time I   met her in her residence at Obalende police quarter because my elder brother who happened to be her husband to be then asked me to go visit her in Obalende. I  can never forget the type of Egussi soup with bounded yam she served me that very Sunday afternoon.",
-        "Also, I can not forget how she saved me from police embarrrassment when my master arrested me for something I no nothing about.",
-        "She usually told me that she is very aware of the task ahead when she accepted to marry by brother as a first son.but.",
-        "Today I would have loved to see both of them lived Longer than they did but only God knows it better than we do.",
-        "Adeo  our wife, Good night Sis. Ngosi Okonta"
+        "",
+        "There is so much to say about our wife, the late Mrs. Victoria Ngozi Okonta, but words may never truly be enough to capture it all.",
+        "I vividly remember the first time I met her at her residence in the Obalende Police Quarters. My elder brother, her husband, had asked me to visit her, and I’ll never forget the delicious Egusi soup with pounded yam she served that Sunday afternoon. Her warmth and hospitality stayed with me from that very day.",
+        "I also cannot forget how she once saved me from police embarrassment when my master wrongfully had me arrested for something I knew nothing about. She stepped in without hesitation, firm, fearless, and compassionate.",
+        "She often told me she knew exactly what she was stepping into when she chose to marry my brother, especially as he was the first son. She accepted the responsibility with grace, strength, and unwavering dedication.",
+        "Today, I wish they both lived longer than they did, but God knows best.",
+        "Adeo  our wife, Good night Sis. Ngosi Okonta",
       ],
       relationship: "Brother-in-Law",
       image: ""      
