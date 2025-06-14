@@ -261,6 +261,20 @@ export const memorialData: MemorialData = {
 
   tributes: [
     {
+      name: "Solomon Okonta",
+      message: [
+        "From  Engr. Solomon Okonta:",    
+        "There is so many things to talk about our wife. late Mrs. Victoria Ngosi Okonta but this platform will not be enough to express it.",
+        "I can vividly remember the first time I   met her in her residence at Obalende police quarter because my elder brother who happened to be her husband to be then asked me to go visit her in Obalende. I  can never forget the type of Egussi soup with bounded yam she served me that very Sunday afternoon.",
+        "Also, I can not forget how she saved me from police embarrrassment when my master arrested me for something I no nothing about.",
+        "She usually told me that she is very aware of the task ahead when she accepted to marry by brother as a first son.but.",
+        "Today I would have loved to see both of them lived Longer than they did but only God knows it better than we do.",
+        "Adeo  our wife, Good night Sis. Ngosi Okonta"
+      ],
+      relationship: "Brother-in-Law",
+      image: ""      
+    },
+    {
       name: "Ifeoma",
       relationship: "Daughter",
       message: [

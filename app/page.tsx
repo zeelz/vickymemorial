@@ -121,7 +121,7 @@ export default function FuneralProgram() {
               <h1 className="text-3xl font-bold text-center mb-3">{person.fullName}</h1>
 
               {/* Quote Card */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-4 border border-amber-300/30">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 pt-4 mb-4 border border-amber-300/30">
                 <p className="text-amber-200 text-center mb-3 text-lg">{person.title}</p>
                 <p className="text-white/80 font-bold text-center mb-3">
                   {person.birthDate} - {person.deathDate}
