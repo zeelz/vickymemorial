@@ -466,6 +466,38 @@ export const memorialData: MemorialData = {
       relationship: "Family",
       image: ""
     },
+    {
+      name: "Deaconess Grace Ezeiruaku",
+      message: [
+        "Tribute to a Dear Sister",
+
+        "Writing a tribute to a loved one is never easy—especially when that loved one is young.",
+
+        "Sister Victoria Ngozi Okonta was a dear sister in Christ and a true child of God. We all met at The Redeemed Evangelical Mission (TREM), Festac branch.",
+        "We began our journey together as young families, with our children in the children’s department, while she and her beloved husband of blessed memory served in the Men’s and Young Women’s fellowships respectively.",
+
+        "Sister Victoria was a gentle and loving soul. You could hardly hear her raise her voice or argue with anyone. She was a true mother—not just to her biological children but also to other members of the church who lived in her home at the time.",
+
+        "As the leader of the Young Christian Women’s Fellowship then, I can testify that she never gave me any trouble. She was always supportive—present for her nuclear family as well as for her in-laws who lived with them.",
+
+        "Later, she relocated from Lagos to Edo State due to a civil service transfer. When she retired and returned to Lagos, we reconnected. I visited her several times before she left Festac. We kept in touch regularly—exchanging calls and prayers almost daily until she took ill.",
+
+        "I was out of town for a while. Upon my return, our dear sister, Deaconess Joyce Ihezue, broke the sad news of Sister Victoria’s passing to me.",
+        "That Sunday was especially painful. My heart immediately went to her lovely children, who were her closest companions and friends.",
+        "May God now be the parent they look up to.",
+
+        "“Precious in the sight of the Lord is the death of His saints.”",
+        "Sister Victoria has gone the way of all mortals. Death is the gateway to life. She fought the good fight, she kept the faith, and I believe she will receive her crown from her Maker, whom she served wholeheartedly.",
+
+        "My prayer is that the Holy Spirit will comfort the church she worshipped with, her beautiful children—Ifeoma, Fumnanya, and Toochukwu—her siblings, and the entire Okonta family.",
+
+        "Good night, my dear sister.",
+        "See you on the resurrection morning."
+      ],
+      relationship: "Friend",
+      image: ""
+      
+    },
   ],
 
   contacts: [
